@@ -4,13 +4,13 @@
   "steps": [
     {
       "file": "docker-compose.yml",
-      "description": "This file describes to docker how to build and start the `server`, the `client`, the `database` and a `reverse-proxy server`.\n\nIt is important to specify the version for later deployments.\n\nNote the name has not `prod` at the end. This means this file should be considered as a `dev` docker-compose file. Indeed, launch services are built from local sources.\n*dev and prod won't execute the same commands*\n\nIn this case we override the `default commands` specified in the docker files (used for development) by the commands used for production.\n",
-      "line": 1
+      "description": "The `server container` will be built as described the in the file `./server/Dockerfile` ",
+      "line": 5
     },
     {
       "file": "docker-compose.yml",
-      "description": "The `server container` will be built as described the in the file `./server/Dockerfile` ",
-      "line": 5
+      "description": "This file describes to docker how to build and start the `server`, the `client`, the `database` and a `reverse-proxy server`.\n\nIt is important to specify the version for later deployments.\n\nNote the name has not `prod` at the end. This means this file should be considered as a `dev` docker-compose file. Indeed, launch services are built from local sources.\n*dev and prod won't execute the same commands*\n\nIn this case we override the `default commands` specified in the docker files (used for development) by the commands used for production.\n",
+      "line": 1
     },
     {
       "file": "server/Dockerfile",
