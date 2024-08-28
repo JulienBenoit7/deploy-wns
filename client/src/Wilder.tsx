@@ -12,7 +12,7 @@ function Wilder({ city, name }: WilderProps) {
     <Card>
       <img src={blank_profile} alt={`${name} Profile`} />
       <h3>{name}</h3>
-      <h4>Bonjour</h4>
+      <h4>salut</h4>
       <p>{city}</p>
     </Card>
   );
